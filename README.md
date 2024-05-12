@@ -14,3 +14,16 @@ NodeLib – это Библиотека классов, предоставляю
 #### RpcRequect – класс описывающий запрос к TranslationServer, содержит в себе информацию о команде и дополнительные данные
 #### RpcResponse – класс описывающий ответ от TranslationServer
 
+## Пример использования класса Graph:
+	from GraphLibrary import Edge, Node, Graph
+	import asyncio
+
+
+	async def main():
+	    async with Graph(sender_endpoint="http://localhost:9090/") as graph:
+	        node = graph.create_node()
+
+
+	if __name__ == '__main__':
+	    asyncio.run(main())
+
