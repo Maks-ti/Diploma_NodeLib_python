@@ -1,4 +1,4 @@
 
-from .Edge import Edge
-from .Graph import Graph
 from .Node import Node
+from .Node import Edge
+from .Graph import Graph
